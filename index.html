@@ -71,12 +71,12 @@
 <div id="impress" data-transition-duration="750">
 
     <div class="step slide" id="title" data-x="0" data-y="0" data-scale="2">
-        <h4><strong>2017-03-06</strong> | <a class="green" href="https://www.rg.mpg.de/">Max Planck Institute for European Legal History, Frankfurt/M.</a></h4>
-        <h4><strong>Plenary Assembly</strong></h4>
+        <h4><strong>2018-06-05</strong> | <a class="green" href="http://www.harnackhaus-berlin.mpg.de/">Tagungsstätte Harnack-Haus, Berlin</a></h4>
+        <h4><strong>Retreat Dpt. 1</strong></h4>
 
         <h1 class="down-100">DH @ MPIeR</h1>
 
-        <h2 class="red up-25">Digital Humanities offerings at the Institute</h2>
+        <h2 class="green up-25">Digital Humanities offerings at the Institute</h2>
 
         <h4 class="down-100">
             <strong>Slides:</strong>
@@ -140,6 +140,7 @@
                 <li>Translation studies compare related texts in various ways</li>
                 <li><q>Sources</q> are offered publicly (as data)</li>
                 <li>Annotations? Reference lists?</li>
+                <li>There are (law) resources that self-identify as databases/corpora</li>
             </ul>
         </main>
     </div>
@@ -152,10 +153,14 @@
             <h2>Contents of this talk</h2>
             <ol class="line-height-one-five">
                 <li class="pale"><em>Introduction</em></li>
-                <li>Data Modelling</li>
-                <li>Data Acquisition</li>
+                <li class="pale">Data Modelling</li>
+                <li class="pale">Data Acquisition</li>
                 <li>Analysis of Your Data</li>
-                <li>Publication of Your Data</li>
+                <ul>
+                    <li>text</li>
+                    <li>database</li>
+                </ul>
+                <li class="pale">Publication of Your Data</li>
                 <li>Conclusion</li>
             </ol>
         </main>
@@ -260,22 +265,100 @@
         </main>
     </div>
 
-    <div class="step slide" id="data_analysis">
+    <div class="step slide" data-rel-x="0" data-rel-y="0" id="data_acquisition__">
+        <header>
+            <h1>Data Acquisition</h1>
+        </header>
         <main>
-            <h1 class="green">04</h1>
+            <h2>Acquisition</h2>
+
+            <table>
+                <tr>
+                    <td width="50%">
+                        <h3>Manual</h3>
+                        <ul>
+                            <li>Office software</li>
+                            <li>Data entry forms</li>
+                            <li>Code editor</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h3 class="highlight">Automatic</h3>
+                        <ul>
+                            <li class="highlight">OCR/Transcription Service</li>
+                            <li class="highlight">Import</li>
+                            <li class="highlight">Scraping</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </main>
+    </div>
+
+    <div class="step slide" id="text_analysis">
+        <main>
+            <h1 class="green">04.1</h1>
             <h2 class="line-height-one-five">
-                Data Analysis
+                Data Analysis: Text
             </h2>
         </main>
     </div>
 
-    <div class="step slide" id="data_analysis_collation_1">
+    <div class="step slide" id="text_analysis_taxonomy">
         <header>
-            <h1>Data Analysis</h1>
+            <h1>Text Analysis</h1>
+            <h2>Types</h2>
+        </header>
+        <main>
+            <div class="mfp-lightbox">
+                <a class="green" href="resources/img/ta_tasks.png">
+                    <img style="height:420px;margin-left:2em;margin-top:0em;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;" src="resources/img/ta_tasks.png" alt="Taxonomy of text analysis tasks"/>
+                </a>
+            </div>
+            <span style="font-size:12px;margin-left:50px;position:relative;top:-15px;">Source: <a href="https://doi.org/10.1111%2Fcgf.12873">Jänicke et al. / Visual Text Analysis in Digital Humanities. <i>Computer Graphics Forum</i> 36/6 (2017), p. 232</a></span>
+        </main>
+    </div>
+
+    <div class="step slide" id="text_analysis_reuse" data-rel-x="1000" data-rel-y="0" data-scale="1">
+        <header>
+            <h1>Text Analysis</h1>
             <h2>Examples (1)</h2>
         </header>
         <main>
-            <h2>Text Collation / Alignment</h2>
+            <h2>Text Re-Use Detection</h2>
+            <div class="mfp-lightbox">
+                <a class="green" href="resources/img/tr_grid.png">
+                    <img style="width:500px;margin-left:8em;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;" src="resources/img/tr_grid.png" alt="Grid of text reuse occurrences"/>
+                </a>
+            </div>
+            <span style="font-size:12px;margin-left:50px;position:relative;top:-15px;">Source: <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7294398&isnumber=7294366">Jänicke et al. / Visualizations for Text Re-use. <i>2014 International Conference on Information Visualization Theory and Applications (IVAPP)</i>, Lisbon, Portugal, 2014.</a></span>
+        </main>
+    </div>
+
+    <div class="step slide" id="text_analysis_reuse_network">
+        <header>
+            <h1>Text Analysis</h1>
+            <h2>Examples (1)</h2>
+        </header>
+        <main>
+            <h2>Text Re-Use Detection</h2>
+            <div class="mfp-lightbox">
+                <a class="green" href="resources/img/field_code.png">
+                    <img style="height:420px;margin-left:2em;margin-top:0em;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;" src="resources/img/field_code.png" alt="Network of borrowings in US civil procedure"/>
+                </a>
+            </div>
+            <span style="font-size:12px;margin-left:50px;position:relative;top:-15px;">Source: <a href="https://doi.org/10.1093/ahr/123.1.132">Funk and Mullen / The Spine of American Law: Digital Text Analysis and US Legal Practice. <i>The American Historical Review</i> 123/1 (2018), p. 149</a></span>
+        </main>
+    </div>
+
+
+    <div class="step slide" id="text_analysis_collation_1">
+        <header>
+            <h1>Text Analysis</h1>
+            <h2>Examples (2)</h2>
+        </header>
+        <main>
+            <h2>Edition Comparison / Text Collation / Alignment</h2>
             <div style="float: left;" width="50%">
                 <img src="resources/img/collation_1_vvv_alignment.png" style="width:500px;">
             </div>
@@ -292,25 +375,25 @@
         </main>
     </div>
 
-    <div class="step slide" id="data_analysis_collation_2" data-rel-x="-280" data-rel-y="75" data-scale="0.48">
+    <div class="step slide" id="text_analysis_collation_2" data-rel-x="-280" data-rel-y="75" data-scale="0.48">
         <main>
             <img src="resources/img/collation_1_vvv_alignment.png" style="width:100%">
         </main>
     </div>
 
-    <div class="step slide" id="data_analysis_collation_3" data-rel-x="700" data-rel-y="0" data-scale="0.48">
+    <div class="step slide" id="text_analysis_collation_3" data-rel-x="700" data-rel-y="0" data-scale="0.48">
         <main>
             <img src="resources/img/collation_2_vvv_eddi_values.png" style="width:100%">
         </main>
     </div>
 
-    <div class="step slide" id="data_analysis_collation_4" data-rel-x="-280" data-rel-y="-60" data-scale="1">
+    <div class="step slide" id="text_analysis_collation_4" data-rel-x="-280" data-rel-y="-60" data-scale="1">
         <header>
-            <h1>Data Analysis</h1>
-            <h2>Examples (1)</h2>
+            <h1>Text Analysis</h1>
+            <h2>Examples (2)</h2>
         </header>
         <main>
-            <h2>Text Collation / Alignment</h2>
+            <h2>Edition Comparison / Text Collation / Alignment</h2>
             <div style="float: left;" width="50%">
                 <img src="resources/img/collation_1_vvv_alignment.png" style="width:500px;">
             </div>
@@ -324,20 +407,20 @@
         </main>
     </div>
 
-    <div class="step slide" id="data_acquisition_collation_5" data-rel-x="0" data-rel-y="0">
+    <div class="step slide" id="text_analysis_collation_5" data-rel-x="0" data-rel-y="0">
         <header>
-            <h1>Data Analysis</h1>
-            <h2>Examples (1)</h2>
+            <h1>Text Analysis</h1>
+            <h2>Examples (2)</h2>
         </header>
         <main>
-            <h2>Text Collation / Alignment</h2>
+            <h2>Edition Comparison / Text Collation / Alignment</h2>
             <div style="float: left;" width="50%">
                 <img src="resources/img/collation_1_vvv_alignment.png" style="width:500px;">
             </div>
             <div style="float: right;" width="50%">
                 <img src="resources/img/collation_2_vvv_eddi_values.png" style="width:500px;">
             </div>
-            <img src="resources/img/collation_3_lera.png" style="position:absolute;top:30%;left:200px;display:block;margin:auto;width:700px;">
+            <img src="resources/img/collation_3_lera.png" style="position:absolute;top:30%;left:200px;display:block;margin:auto;width:700px;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;">
             <div width="100%" class="centered" style="clear:both;font-size:14px;">
                 Version Variation Visualization: &lt;<a class="green" href="http://www.delightedbeauty.org/vvv/">http://www.delightedbeauty.org/vvv/</a>&gt;<br>
                 <span style="position:relative;top:30px;">Lera: &lt;<a class="green" href="https://lera.uzi.uni-halle.de/editions/1/edit">https://lera.uzi.uni-halle.de/editions/1/edit</a>&gt;</span>
@@ -345,51 +428,27 @@
         </main>
     </div>
 
-    <div class="step slide" id="data_analysis_collation_6" data-rel-x="24" data-rel-y="96" data-scale="0.56">
+    <div class="step slide" id="text_analysis_collation_6" data-rel-x="24" data-rel-y="96" data-scale="0.56">
         <main>
             <img src="resources/img/collation_3_lera.png" style="width:118%;margin-left:-100px;">
         </main>
     </div>
 
 
-    <div class="step slide" id="data_analysis_reuse" data-rel-x="1000" data-rel-y="0" data-scale="1">
+    <div class="step slide" id="text_analysis_collocations">
         <header>
-            <h1>Data Analysis</h1>
-            <h2>Examples (2)</h2>
-        </header>
-        <main>
-            <h2>Text Re-Use Detection</h2>
-            <div width="100%">
-                <img style="float:left;" src="resources/img/reuse_1.png" style="width:670px;margin-bottom:35px;">
-                <span style="margin-left:-50px;font-size:12px;">Source: <a href="http://tuprints.ulb.tu-darmstadt.de/4342/" class="green">urn:nbn:de:tuda-tuprints-43429</a></span>
-            </div>
-            <div>
-                <div style="vertical-align:top;position:relative;top:10px;width:450px;">
-                    <img src="resources/img/reuse_2.jpg">
-                    <br/>
-                    <span style="font-size:12px;margin-left:50px;position:relative;top:-15px;">Source: <a href="https://dx.doi.org/10.1073%2Fpnas.1415135111" class="green">doi:10.1073/pnas.1415135111</a></span>
-                </div>
-                <div  style="position:absolute;left:450px;top:270px;width:600px;">
-                    <img src="resources/img/reuse_3.png">
-                    <br/>
-                    <span style="font-size:12px;margin-left:50px;position:relative;top:-20px;">Source: &lt;<a href="http://demo.fragmentarytexts.org/en/istros/digital-edition/digital-edition-exploring-text-re-uses-across-languages.html" class="green">https://demo.fragmentarytexts.org</a>&gt;</span>
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <div class="step slide" id="data_analysis_collocations">
-        <header>
-            <h1>Data Analysis</h1>
+            <h1>Text Analysis</h1>
             <h2>Examples (3)</h2>
         </header>
         <main>
             <h2>Diachronic Collocations</h2>
             <div class="centered">
-                <video width="800" height="500" autoplay controls style="pointer-events:auto;">
-                    <source src="resources/vid/diacollo.mp4#t=33,60" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <a class="popup-player" href="resources/vid/diacollo.mp4">
+                    <video width="800" height="500" autoplay controls style="pointer-events:auto;">
+                        <source src="resources/vid/diacollo.mp4#t=33,60" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </a>
             </div>
             <div width="100%" class="centered" style="clear:both;font-size:14px;">
                 DiaCollo: &lt;<a class="green" href="https://kaskade.dwds.de/dstar/dta/diacollo/?query=Konstitution&_s=submit&date=&slice=10&score=ld&kbest=10&cutoff=&profile=2&format=cloud&groupby=&eps=0">https://kaskade.dwds.de/dstar/dta/diacollo/</a>&gt;
@@ -397,10 +456,70 @@
         </main>
     </div>
 
+    <div class="step slide" id="database_analysis">
+        <main>
+            <h1 class="green">04.2</h1>
+            <h2 class="line-height-one-five">
+                Data Analysis: Databases
+            </h2>
+        </main>
+    </div>
+
+
+    <div class="step slide" id="data_analysis_db1">
+        <header>
+            <h1>Data Analysis</h1>
+            <h2>Examples (1)</h2>
+        </header>
+        <main>
+            <h3>Ex.: "Case" Data Model / Church Governance after Trent</h3>
+
+            <p class="small">(<i>Hearings</i>, <i>Participants</i>, <i>Resolution</i>, <i>Matter</i>)</p>
+            <p class="small">Cf. <a href="https://doi.org/10.1007/s10506-012-9119-6">Wyner, Hoekstra / A Legal Case OWL Ontology with an Instantiation of <i>Popov v. Hayashi</i>. <i>Artificial Intelligence and Law</i> 20/1 (2012)</p>
+
+            <div class="mfp-lightbox">
+                <a class="green" href="resources/img/model_case.png">
+                    <img style="height:420px;margin-left:-8em;margin-top:0em;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;z-index:0;" src="resources/img/model_case.png" alt="Data Model of Cases"/>
+                </a>
+            </div>
+        
+            <div class="mfp-iframe" style="margin-left:9em;margin-top:-10em;width:900px;">
+                <iframe style="width:900px;height:450px;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRSzcpAthLxUEDAb_X71Ah83RtN7mJyVtb9fvSDrsJHXbkvfTsBE7BgpYVzLS7Lo3G0KaG0lvk3Yb_q/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+            </div>
+<!--
+             <div class="mfp-lightbox">
+                <a class="green" href="resources/img/asv_scc_pos_tbl.png">
+                    <img style="height:500px;margin-left:0em;margin-top:0em;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;" src="resources/img/asv_scc_pos_tbl.png" alt="Cases as captured in a spreadsheet"/>
+                </a>
+            </div>
+ -->
+         </main>
+    </div>
+
+    <div class="step slide" id="data_analysis_db2">
+        <header>
+            <h1>Data Analysis</h1>
+            <h2>Examples (2)</h2>
+        </header>
+        <main>
+            <h3>Ex.: Graph Data Model / Historiograph</h3>
+
+            <p class="small"></p>
+
+            <div class="mfp-lightbox">
+                <a class="green" href="resources/img/historiograph.png">
+                    <img style="height:800px;border:1px solid #7ca6a6;box-shadow: 4px 4px 2px grey;z-index:0;" src="resources/img/historiograph.png" alt="Graph of themes and places related to oral accounts"/>
+                </a>
+            </div>
+            <span style="font-size:12px;margin-left:50px;position:relative;top:-15px;">Source: <a href="http://histograph.cvce.eu/">http://histograph.cvce.eu/</a></span>
+         </main>
+    </div>
+
+
     <div class="step slide" id="data_analysis_geomapping">
         <header>
             <h1>Data Analysis</h1>
-            <h2>Examples (4)</h2>
+            <h2>Examples (3)</h2>
         </header>
         <main>
             <h2>Geomapping</h2>
@@ -412,6 +531,7 @@
             </div>
         </main>
     </div>
+
 
     <div class="step slide" id="data_analysis_querying">
         <header>

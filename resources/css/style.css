@@ -176,12 +176,12 @@ p {
 a {
 	pointer-events: none;
 	text-decoration: none;
-	color: #cc3333;
+	color: #7ca6a6;
 	font-weight: bold;
 }
 
 a:link, a:hover, a:focus, a:visited {
-	color: #cc3333;
+	color: #7ca6a6;
 }
 
 strong {
@@ -228,7 +228,7 @@ li:before {
 	position: relative;
 	margin-left: -1em;
 	left: -0.5em;
-	color: #cc3333;
+	color: #7ca6a6;
 }
 
 ul ul li, ol ol li {
@@ -426,8 +426,8 @@ CLASSES FOR SPECIAL LAYOUT/TYPOGRAPHY
 
 .highlight {
 	background: #FFEF00;
-	padding-left: 0.2em;
-	padding-right: 0.2em;
+	/* padding-left: 0.2em;
+	padding-right: 0.2em; */
 }
 
 .gh-icon, .twitter-icon {
